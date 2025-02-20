@@ -5,27 +5,49 @@ using System.IO;
 
 public class PositionRecorder : MonoBehaviour
 {
+    [Header("Player")]
     public GameObject player;
 
+    [Header("Frequence (hz)")]
+    [Tooltip("In hertz)")]
+    public int frequence = 120;
+    private float realFrequency;
+
+    [Header("Is data exported?")]
+    public bool dataExported = false;
+    public bool dataAvailable = false;
+
     private string filename;
+    private List<float> posX = new();
+    private List<float> posY = new();    
 
-    private List<float> posX = new List<float>();
-    private List<float> posY = new List<float>();
-
-    private bool dataExported;
     void Start()
     {
-        dataExported = false;
+        filename = Application.streamingAssetsPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
+        //filename = Application.persistentDataPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
 
-        filename = Application.streamingAssetsPath + "\\" + "PositionData" + ".csv";
-        //filename = Application.persistentDataPath + "\\" + "PositionData" + ".csv";
+        UpdateInvoke();
+    }
 
-        InvokeRepeating("RecordPosition", 0, 0.0083f);
+    void UpdateInvoke()
+    {
+        if (frequence <= 0)
+        {
+            return;
+        }
+
+        realFrequency = 1f / frequence;
+        CancelInvoke("RecordPosition");
+        InvokeRepeating("RecordPosition", 0, realFrequency);
     }
 
     public void Update()
     {
-        
+        if (dataExported && !dataAvailable)
+        {
+            ExportData();
+            dataAvailable = true;
+        }
     }
 
     void RecordPosition()
@@ -37,7 +59,7 @@ public class PositionRecorder : MonoBehaviour
         }
     }
 
-    /*void ExportData()
+    void ExportData()
     {
         TextWriter tw = new StreamWriter(filename, false);
 
@@ -49,6 +71,6 @@ public class PositionRecorder : MonoBehaviour
         }
 
         tw.Close();
-    }*/
+    }
 }
 

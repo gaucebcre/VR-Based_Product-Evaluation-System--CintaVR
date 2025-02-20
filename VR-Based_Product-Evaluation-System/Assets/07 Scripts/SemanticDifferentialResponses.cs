@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.XR.OpenXR.Input;
 
 public class SemanticDifferentialResponses : MonoBehaviour
 {
@@ -9,19 +11,40 @@ public class SemanticDifferentialResponses : MonoBehaviour
     public GameObject[] semanticScales;
     public Slider evaluationSlider;
 
-    [Header("Responses")]
+    [Header("Canvas and background")]
+    public GameObject[] canvasAndBackground;
+
+    [Header("Responses")]    
     public List<float> evaluationResponses = new List<float>();
 
-    private int counter;
+    public int counter;
+
+    private GameObject manager;
+    private string filename;
+    private bool dataExported = false;
 
     void Start()
     {
+        manager = GameObject.FindGameObjectWithTag("Manager");
+
         for (int i = 1; i < semanticScales.Length; i++)
         {
             semanticScales[i].SetActive(false);
         }
 
         counter = 0;
+    }
+
+    void Update()
+    {
+        filename = Application.streamingAssetsPath + "\\" + manager.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
+        //filename = Application.persistentDataPath + "\\" + manager.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
+
+        if (!dataExported && counter == semanticScales.Length)
+        {            
+            ExportData();
+            dataExported = true;
+        }
     }
 
     public void NextSemanticScale()
@@ -40,7 +63,10 @@ public class SemanticDifferentialResponses : MonoBehaviour
 
             else
             {
-                gameObject.SetActive(false);
+                for (int i = 0; i < canvasAndBackground.Length; ++i)
+                {
+                    canvasAndBackground[i].SetActive(false);
+                }
             }
         }
     }
@@ -54,5 +80,23 @@ public class SemanticDifferentialResponses : MonoBehaviour
             counter--;
             semanticScales[counter].SetActive(true);
         }
+    }
+
+    public void ExportData()
+    {
+        Debug.Log("Exporting data");
+
+        TextWriter tw = new StreamWriter(filename, false);
+
+        tw.WriteLine("Scale" + ";" + "Value");
+
+        for (int i = 0; i < evaluationResponses.Count; i++)
+        {
+            tw.WriteLine("" + ";" + evaluationResponses[i]);
+        }
+
+        tw.Close();
+
+        Debug.Log("Data exported");
     }
 }

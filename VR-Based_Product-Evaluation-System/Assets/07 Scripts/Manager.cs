@@ -3,6 +3,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.IO;
 
 public class Manager : MonoBehaviour
 {
@@ -15,12 +16,15 @@ public class Manager : MonoBehaviour
     [Header("User code")]
     public string userCode;
 
+    [Header("Display product during evaluation?")]
+    public bool displayProduct = false;
+
     [Header("Other")]
     public TextMeshProUGUI letterDropdown;
     public TextMeshProUGUI numberDropdown;
     public GameObject semanticDifferential;
 
-    private bool evaluationStarted;
+    private bool evaluationStarted = false;
 
     void Start()
     {
@@ -29,9 +33,7 @@ public class Manager : MonoBehaviour
         DontDestroyOnLoad(player);
 
         //Save first code
-        userCode = letterDropdown.text + numberDropdown.text;
-
-        evaluationStarted = false;
+        userCode = letterDropdown.text + numberDropdown.text;        
     }
 
     void Update()
@@ -56,7 +58,7 @@ public class Manager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Evaluation-scene" && !evaluationStarted)
         {
-            player.GetComponent<PositionRecorder>().enabled = true;
+            gameObject.GetComponent<PositionRecorder>().enabled = true;
             gameObject.GetComponent<EyeTrackingRecorder>().enabled = true;
 
             if (semanticDifferential == null)
@@ -71,8 +73,8 @@ public class Manager : MonoBehaviour
         else if (evaluationStarted && OVRInput.GetDown(OVRInput.Button.One))
         {
             semanticDifferential.SetActive(true);
-            player.GetComponent<PositionRecorder>().enabled = false;
-            gameObject.GetComponent<EyeTrackingRecorder>().enabled = false;
+            gameObject.GetComponent<EyeTrackingRecorder>().dataExported = true;
+            gameObject.GetComponent<PositionRecorder>().dataExported = true;
         }
     }
 }
