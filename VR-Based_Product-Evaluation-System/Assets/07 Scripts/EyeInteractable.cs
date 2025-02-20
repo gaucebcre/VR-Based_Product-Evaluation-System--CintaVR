@@ -8,7 +8,7 @@ public class EyeInteractable : MonoBehaviour
 {
     public bool IsHovered { get; set; }
 
-    public float dwellTime;
+    //public float dwellTime;
     public bool isHovered;
 
     void Start()
@@ -22,7 +22,7 @@ public class EyeInteractable : MonoBehaviour
         if (IsHovered)
         {
             isHovered = true;
-            dwellTime += Time.deltaTime;
+            //dwellTime += Time.deltaTime;
         }
 
         else

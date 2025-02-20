@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -17,6 +18,9 @@ public class Manager : MonoBehaviour
     [Header("Other")]
     public TextMeshProUGUI letterDropdown;
     public TextMeshProUGUI numberDropdown;
+    public GameObject semanticDifferential;
+
+    private bool evaluationStarted;
 
     void Start()
     {
@@ -26,11 +30,13 @@ public class Manager : MonoBehaviour
 
         //Save first code
         userCode = letterDropdown.text + numberDropdown.text;
+
+        evaluationStarted = false;
     }
 
     void Update()
     {
-        
+        StartEvaluation();
     }
 
     public void ChangeScene()
@@ -39,14 +45,34 @@ public class Manager : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName);
         }
-        else
-        {
-            Debug.LogWarning("Scene name is not set!");
-        }
     }
 
     public void SaveUserCode()
     {
        userCode = letterDropdown.text + numberDropdown.text;
+    }
+
+    public void StartEvaluation()
+    {
+        if (SceneManager.GetActiveScene().name == "Evaluation-scene" && !evaluationStarted)
+        {
+            player.GetComponent<PositionRecorder>().enabled = true;
+            gameObject.GetComponent<EyeTrackingRecorder>().enabled = true;
+
+            if (semanticDifferential == null)
+            {
+                semanticDifferential = GameObject.FindGameObjectWithTag("SemanticDifferential");
+                semanticDifferential.SetActive(false);
+            }
+
+            evaluationStarted = true;
+        }
+        
+        else if (evaluationStarted && OVRInput.GetDown(OVRInput.Button.One))
+        {
+            semanticDifferential.SetActive(true);
+            player.GetComponent<PositionRecorder>().enabled = false;
+            gameObject.GetComponent<EyeTrackingRecorder>().enabled = false;
+        }
     }
 }
