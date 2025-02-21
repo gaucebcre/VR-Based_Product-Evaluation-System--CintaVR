@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
@@ -11,14 +12,13 @@ public class SemanticDifferentialResponses : MonoBehaviour
     public GameObject[] semanticScales;
     public Slider evaluationSlider;
 
-    [Header("Canvas and background")]
-    public GameObject[] canvasAndBackground;
-
     [Header("Responses")]    
     public List<float> evaluationResponses = new List<float>();
 
-    public int counter;
+    [Header("Export data to HMD?")]
+    public bool toHMD = false;
 
+    private int counter;
     private GameObject manager;
     private string filename;
     private bool dataExported = false;
@@ -37,8 +37,15 @@ public class SemanticDifferentialResponses : MonoBehaviour
 
     void Update()
     {
-        filename = Application.streamingAssetsPath + "\\" + manager.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
-        //filename = Application.persistentDataPath + "\\" + manager.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
+        if (!toHMD)
+        {
+            filename = Application.streamingAssetsPath + "\\" + manager.GetComponent<Manager>().userCode + "_Semantic-Differential" + ".csv";
+        }
+
+        else
+        {
+            filename = Application.persistentDataPath + "\\" + manager.GetComponent<Manager>().userCode + "_Semantic-Differential" + ".csv";
+        }
 
         if (!dataExported && counter == semanticScales.Length)
         {            
@@ -63,10 +70,8 @@ public class SemanticDifferentialResponses : MonoBehaviour
 
             else
             {
-                for (int i = 0; i < canvasAndBackground.Length; ++i)
-                {
-                    canvasAndBackground[i].SetActive(false);
-                }
+                //Change canvas position, as disabling it stops data exportation
+                gameObject.transform.position = new Vector3(0, -2, 0);
             }
         }
     }
@@ -92,7 +97,7 @@ public class SemanticDifferentialResponses : MonoBehaviour
 
         for (int i = 0; i < evaluationResponses.Count; i++)
         {
-            tw.WriteLine("" + ";" + evaluationResponses[i]);
+            tw.WriteLine("SD" + (i + 1) + ";" + evaluationResponses[i]);
         }
 
         tw.Close();

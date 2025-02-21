@@ -21,18 +21,25 @@ public class EyeTrackingRecorder : MonoBehaviour
     [Tooltip("In hertz)")]
     public int frequence = 120;
     private float realFrequency;
-
-    [Header("Is data exported?")]
-    public bool dataExported = false;
+   
+    [Header("Export data to HMD?")]
+    public bool toHMD = false;
 
     private List<string> voi = new();
-
     private string filename;
+    public  bool dataExported = false;
 
     void Start()
     {
-        filename = Application.streamingAssetsPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Eye-Tracking" + ".csv";
-        //filename = Application.persistentDataPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Eye-Tracking" + ".csv";
+        if (!toHMD)
+        {
+            filename = Application.streamingAssetsPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Eye-tracking" + ".csv";
+        }
+
+        else
+        {
+            filename = Application.persistentDataPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Eye-tracking" + ".csv";
+        }
 
         UpdateInvoke();
     }

@@ -11,20 +11,29 @@ public class PositionRecorder : MonoBehaviour
     [Header("Frequence (hz)")]
     [Tooltip("In hertz)")]
     public int frequence = 120;
-    private float realFrequency;
+    private float realFrequency;    
 
-    [Header("Is data exported?")]
-    public bool dataExported = false;
-    public bool dataAvailable = false;
+    [Header("Export data to HMD?")]
+    public bool toHMD = false;
 
     private string filename;
     private List<float> posX = new();
-    private List<float> posY = new();    
+    private List<float> posY = new();
+
+    public bool dataExported = false;
+    private bool dataAvailable = false;
 
     void Start()
     {
-        filename = Application.streamingAssetsPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
-        //filename = Application.persistentDataPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Position-Data" + ".csv";
+        if (!toHMD)
+        {
+            filename = Application.streamingAssetsPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Position" + ".csv";
+        }
+
+        else
+        {
+            filename = Application.persistentDataPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Position" + ".csv";
+        }
 
         UpdateInvoke();
     }
