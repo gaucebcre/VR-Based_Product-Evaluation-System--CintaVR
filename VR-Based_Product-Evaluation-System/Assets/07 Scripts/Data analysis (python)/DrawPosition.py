@@ -5,8 +5,8 @@ import os
 
 # Obtener la lista de archivos CSV
 # CAMBIAR EL NOMBRE ENTRE " " CON LA RUTA DE LA CARPETA DONDE ESTÉN LOS DATOS
-csv_folder = "D:\\almud\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets"
-csv_files = [file for file in os.listdir(csv_folder) if file.endswith(".csv")]
+csv_folder = "D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets"
+csv_files = [file for file in os.listdir(csv_folder) if file.endswith("_Position.csv")]
 
 # Procesar cada archivo CSV por separado
 for csv_filename in csv_files:
@@ -25,9 +25,9 @@ for csv_filename in csv_files:
     # Crear la gráfica de dispersión con un tamaño personalizado
     fig, ax = plt.subplots(figsize=(30, 24))  # Ajusta el tamaño de la figura en pulgadas
 
-    # Leer la imagen del entorno.
-    # CAMBIAR EL NOMBRE ENTRE " "
-    environment_img = mpimg.imread("Green-VirtualEnvironment_Top.png")
+    # Leer la imagen del entorno
+    # CAMBIAR EL NOMBRE ENTRE " " CON LA RUTA DE LA CARPETA DONDE ESTÉN LOS DATOS
+    environment_img = mpimg.imread("D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets\\SceneSnapshot.png")
 
     # Ajustar el extent para centrar la imagen en el gráfico
     xmin, xmax, ymin, ymax = -20, 20, -20, 20  # Ajusta según tus coordenadas transformadas

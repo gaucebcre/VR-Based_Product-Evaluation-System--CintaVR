@@ -4,9 +4,10 @@ import matplotlib.image as mpimg
 import os
 import seaborn as sns
 
-# Obtener la lista de archivos CSV en la carpeta actual
-csv_folder = "."  # Carpeta actual
-csv_files = [file for file in os.listdir(csv_folder) if file.endswith(".csv")]
+# Obtener la lista de archivos CSV
+# CAMBIAR EL NOMBRE ENTRE " " CON LA RUTA DE LA CARPETA DONDE ESTÉN LOS DATOS
+csv_folder = "D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets"
+csv_files = [file for file in os.listdir(csv_folder) if file.endswith("_Position.csv")]
 
 # Procesar cada archivo CSV por separado
 for csv_filename in csv_files:
@@ -26,7 +27,8 @@ for csv_filename in csv_files:
     fig, ax = plt.subplots(figsize=(30, 24))  # Ajusta el tamaño de la figura en pulgadas
 
     # Leer la imagen del entorno
-    environment_img = mpimg.imread("Green-VirtualEnvironment_Top.png")
+    # CAMBIAR EL NOMBRE ENTRE " " CON LA RUTA DE LA CARPETA DONDE ESTÉN LOS DATOS
+    environment_img = mpimg.imread("D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets\\SceneSnapshot.png")
 
     # Ajustar el extent para centrar la imagen en el gráfico
     xmin, xmax, ymin, ymax = -20, 20, -20, 20  # Ajusta según tus coordenadas transformadas
@@ -34,7 +36,7 @@ for csv_filename in csv_files:
 
     # Generar el mapa de calor encima de la imagen del entorno usando kdeplot de Seaborn
     sns.kdeplot(
-        data["X"], data["Y"], 
+        data=data, x="X", y="Y",
         cmap="Reds",  # Cambia el color del mapa de calor si lo deseas
         shade=True,  # Activa el sombreado para el mapa de calor
         bw_adjust=0.5,  # Ajusta la suavidad del mapa de calor
