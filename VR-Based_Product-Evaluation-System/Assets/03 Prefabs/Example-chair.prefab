@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 7707977953925305932}
   - component: {fileID: 2143521085279833237}
   m_Layer: 0
-  m_Name: ExampleProduct
+  m_Name: Example-chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

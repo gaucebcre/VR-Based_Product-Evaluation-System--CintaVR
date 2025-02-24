@@ -31,7 +31,7 @@ for csv_filename in csv_files:
 
     # Ajustar el extent para centrar la imagen en el gráfico
     xmin, xmax, ymin, ymax = -20, 20, -20, 20  # Ajusta según tus coordenadas transformadas
-    ax.imshow(environment_img, extent=[-15, 15, -8.5, 21.5], aspect='auto') #Modifica el tamaño de la imagen aquí
+    ax.imshow(environment_img, extent=[-15, 15, -15, 15], aspect='auto') #Modifica el tamaño de la imagen aquí
 
     # Generar la gráfica de dispersión encima de la imagen del entorno
     ax.scatter(data["X"], data["Y"], color='white', alpha=0.5, s=20, label='Player trajectory')  # Ajusta el tamaño de los puntos
