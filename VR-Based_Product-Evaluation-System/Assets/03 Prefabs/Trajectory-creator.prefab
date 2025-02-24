@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   csvFile: {fileID: 0}
-  prefabToSpawn: {fileID: 0}
+  prefabToSpawn: {fileID: 4616170613762656599, guid: 559bebf03c386f6429772f26aeacdd74, type: 3}

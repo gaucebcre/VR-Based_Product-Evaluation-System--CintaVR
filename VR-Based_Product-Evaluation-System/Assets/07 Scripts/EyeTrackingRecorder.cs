@@ -25,9 +25,11 @@ public class EyeTrackingRecorder : MonoBehaviour
     [Header("Export data to HMD?")]
     public bool toHMD = false;
 
+    [Header("Other")]
+    public bool dataExported = false;
+
     private List<string> voi = new();
     private string filename;
-    public  bool dataExported = false;
 
     void Start()
     {

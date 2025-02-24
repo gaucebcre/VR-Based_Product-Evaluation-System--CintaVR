@@ -81,6 +81,7 @@ public class SemanticDifferentialResponses : MonoBehaviour
         if (counter >= 1)
         {
             evaluationResponses.RemoveAt(counter - 1);
+            evaluationSlider.value = 0;
             semanticScales[counter].SetActive(false);
             counter--;
             semanticScales[counter].SetActive(true);

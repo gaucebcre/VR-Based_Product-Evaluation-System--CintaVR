@@ -5,7 +5,6 @@ import os
 import seaborn as sns
 
 # Obtener la lista de archivos CSV
-# CAMBIAR EL NOMBRE ENTRE " " CON LA RUTA DE LA CARPETA DONDE ESTÉN LOS DATOS
 csv_folder = "D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets"
 csv_files = [file for file in os.listdir(csv_folder) if file.endswith("_Position.csv")]
 
@@ -27,12 +26,11 @@ for csv_filename in csv_files:
     fig, ax = plt.subplots(figsize=(30, 24))  # Ajusta el tamaño de la figura en pulgadas
 
     # Leer la imagen del entorno
-    # CAMBIAR EL NOMBRE ENTRE " " CON LA RUTA DE LA CARPETA DONDE ESTÉN LOS DATOS
     environment_img = mpimg.imread("D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets\\SceneSnapshot.png")
 
     # Ajustar el extent para centrar la imagen en el gráfico
     xmin, xmax, ymin, ymax = -20, 20, -20, 20  # Ajusta según tus coordenadas transformadas
-    ax.imshow(environment_img, extent=[-15, 15, -8.5, 21.5], aspect='auto')
+    ax.imshow(environment_img, extent=[-15, 15, -15, 15], aspect='auto')  # Modifica el tamaño de la imagen aquí
 
     # Generar el mapa de calor encima de la imagen del entorno usando kdeplot de Seaborn
     sns.kdeplot(
@@ -58,8 +56,11 @@ for csv_filename in csv_files:
     ax.patch.set_facecolor('none')  # Fondo del área del gráfico
     fig.patch.set_facecolor('none')  # Fondo de la figura
 
-    # Guardar la figura con el mismo nombre que el archivo CSV y calidad alta
-    output_filename = os.path.splitext(csv_filename)[0] + "_heatmap" + ".png"
+    # Obtener la ruta de salida en la misma carpeta que el archivo CSV
+    output_folder = csv_folder  # Usar la misma carpeta donde están los archivos CSV
+    output_filename = os.path.join(output_folder, os.path.splitext(csv_filename)[0] + "_heatmap" + ".png")
+
+    # Guardar la figura con el nombre del archivo CSV y calidad alta
     plt.savefig(output_filename, dpi=300, bbox_inches='tight', transparent=True)
 
 # Mostrar las gráficas una vez que se han guardado todas

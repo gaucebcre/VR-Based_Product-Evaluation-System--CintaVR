@@ -16,11 +16,12 @@ public class PositionRecorder : MonoBehaviour
     [Header("Export data to HMD?")]
     public bool toHMD = false;
 
+    [Header("Other")]
+    public bool dataExported = false;
+
     private string filename;
     private List<float> posX = new();
-    private List<float> posY = new();
-
-    public bool dataExported = false;
+    private List<float> posY = new();    
     private bool dataAvailable = false;
 
     void Start()

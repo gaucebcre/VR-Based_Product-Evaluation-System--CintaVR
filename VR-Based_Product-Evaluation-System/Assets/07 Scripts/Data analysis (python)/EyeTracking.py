@@ -102,10 +102,10 @@ for element in all_elements:
 final_df = pd.DataFrame(final_data)
 
 # Guardar el DataFrame como un archivo CSV llamado Final-Data.csv, con separación por ";"
-final_output_path = os.path.join(csv_folder, "Final-Data.csv")
+final_output_path = os.path.join(csv_folder, "Final-ET-Data.csv")
 final_df.to_csv(final_output_path, index=False, sep=";")
 
-print(f"Archivo 'Final-Data.csv' guardado en {final_output_path}")
+print(f"Archivo 'Final-ET-Data.csv' guardado en {final_output_path}")
 
 
 
