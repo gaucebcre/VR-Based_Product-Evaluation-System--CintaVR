@@ -100,8 +100,6 @@ for element in all_elements:
 
 # Crear el DataFrame final
 final_df = pd.DataFrame(final_data)
-
-# Guardar el DataFrame como un archivo CSV llamado Final-Data.csv, con separación por ";"
 final_output_path = os.path.join(csv_folder, "Final-ET-Data.csv")
 final_df.to_csv(final_output_path, index=False, sep=";")
 
