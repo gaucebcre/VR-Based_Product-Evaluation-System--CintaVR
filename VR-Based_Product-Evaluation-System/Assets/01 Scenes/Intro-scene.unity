@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4339d3bd58294a499e7cce2205324cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 5
+  rayDistance: 0.1
   rayWidth: 0.01
   layersToInclude:
     serializedVersion: 2
@@ -4935,7 +4935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4339d3bd58294a499e7cce2205324cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 5
+  rayDistance: 0.1
   rayWidth: 0.01
   layersToInclude:
     serializedVersion: 2

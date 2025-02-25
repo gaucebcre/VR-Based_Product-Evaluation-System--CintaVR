@@ -4,64 +4,53 @@ import matplotlib.image as mpimg
 import os
 import seaborn as sns
 
-# Obtener la lista de archivos CSV
-csv_folder = "D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets"
+# UPDATE csv_folder (PATH)
+csv_folder = "UPDATE"
 csv_files = [file for file in os.listdir(csv_folder) if file.endswith("_Position.csv")]
 
-# Procesar cada archivo CSV por separado
 for csv_filename in csv_files:
-    # Cargar los datos desde el archivo CSV
     data = pd.read_csv(os.path.join(csv_folder, csv_filename), delimiter=";")
 
-    # Convertir las coordenadas a números decimales
     data["X"] = data["X"].str.replace(",", ".").astype(float)
     data["Y"] = data["Y"].str.replace(",", ".").astype(float)
 
-    # Escalar las coordenadas para aumentar la distancia visual entre los puntos
-    scale_factor = 4  # Aumenta este factor para expandir la visualización
+    scale_factor = 4
     data["X"] = data["X"] * scale_factor
     data["Y"] = data["Y"] * scale_factor
 
-    # Crear la gráfica de mapa de calor con un tamaño personalizado
-    fig, ax = plt.subplots(figsize=(30, 24))  # Ajusta el tamaño de la figura en pulgadas
+    fig, ax = plt.subplots(figsize=(30, 24))
 
-    # Leer la imagen del entorno
-    environment_img = mpimg.imread("D:\\almud\\Documents\\04 Unity projects\\VR-Based_Product-Evaluation-System\\VR-Based_Product-Evaluation-System\\Assets\\StreamingAssets\\SceneSnapshot.png")
+    image_filename = "SceneSnapshot.png"
+    image_path = os.path.join(csv_folder, image_filename)
+    environment_img = mpimg.imread(image_path)
 
-    # Ajustar el extent para centrar la imagen en el gráfico
-    xmin, xmax, ymin, ymax = -20, 20, -20, 20  # Ajusta según tus coordenadas transformadas
-    ax.imshow(environment_img, extent=[-15, 15, -15, 15], aspect='auto')  # Modifica el tamaño de la imagen aquí
+    xmin, xmax, ymin, ymax = -20, 20, -20, 20
+    ax.imshow(environment_img, extent=[-15, 15, -15, 15], aspect='auto')
 
-    # Generar el mapa de calor encima de la imagen del entorno usando kdeplot de Seaborn
     sns.kdeplot(
         data=data, x="X", y="Y",
-        cmap="Reds",  # Cambia el color del mapa de calor si lo deseas
-        shade=True,  # Activa el sombreado para el mapa de calor
-        bw_adjust=0.5,  # Ajusta la suavidad del mapa de calor
+        cmap="Reds",
+        shade=True,
+        bw_adjust=0.5,
         ax=ax,
-        alpha=0.5  # Transparencia del mapa de calor
+        alpha=0.5
     )
 
     ax.set_title("Player Heatmap")
     ax.set_xlabel("X")
     ax.set_ylabel("Y")
-    ax.axis("equal")  # Ajustar el tamaño de los ejes X e Y para que tengan la misma escala
-    ax.grid(False)  # Ocultar la cuadrícula
+    ax.axis("equal")
+    ax.grid(False)
 
-    # Ajustar los límites de los ejes si es necesario
-    ax.set_xlim(xmin, xmax)  # Ajusta estos límites según tus datos transformados
+    ax.set_xlim(xmin, xmax)
     ax.set_ylim(ymin, ymax)
 
-    # Configurar el fondo de la gráfica y de la figura como transparente
-    ax.patch.set_facecolor('none')  # Fondo del área del gráfico
-    fig.patch.set_facecolor('none')  # Fondo de la figura
+    ax.patch.set_facecolor('none')
+    fig.patch.set_facecolor('none')
 
-    # Obtener la ruta de salida en la misma carpeta que el archivo CSV
-    output_folder = csv_folder  # Usar la misma carpeta donde están los archivos CSV
+    output_folder = csv_folder
     output_filename = os.path.join(output_folder, os.path.splitext(csv_filename)[0] + "_heatmap" + ".png")
 
-    # Guardar la figura con el nombre del archivo CSV y calidad alta
     plt.savefig(output_filename, dpi=300, bbox_inches='tight', transparent=True)
 
-# Mostrar las gráficas una vez que se han guardado todas
 plt.show()
