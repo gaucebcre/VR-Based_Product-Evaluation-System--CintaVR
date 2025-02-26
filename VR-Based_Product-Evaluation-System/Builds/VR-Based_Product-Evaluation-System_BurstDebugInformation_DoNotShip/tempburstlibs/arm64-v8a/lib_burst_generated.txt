@@ -1,0 +1,17 @@
+Library: D:\almud\Documents\04 Unity projects\VR-Based_Product-Evaluation-System\VR-Based_Product-Evaluation-System\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--platform=Android
+--backend=burst-llvm-16
+--target=ARMV8A_AARCH64
+--global-safety-checks-setting=Off
+--meta-data-generation=False
+--dump=Function
+--float-precision=Standard
+--target-framework=NetFramework
+--generate-link-xml=Temp\burst.link.xml
+--temp-folder=D:\almud\Documents\04 Unity projects\VR-Based_Product-Evaluation-System\VR-Based_Product-Evaluation-System\Temp\Burst
+--key-folder=D:/Programas instalados/Unity versions/2022.3.46f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--decode-folder=D:\almud\Documents\04 Unity projects\VR-Based_Product-Evaluation-System\VR-Based_Product-Evaluation-System\Library\Burst
+--output=D:\almud\Documents\04 Unity projects\VR-Based_Product-Evaluation-System\VR-Based_Product-Evaluation-System\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
+--pdb-search-paths=Temp/ManagedSymbols/
+
+
