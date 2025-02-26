@@ -1023,7 +1023,7 @@ GameObject:
   - component: {fileID: 452339714}
   - component: {fileID: 452339713}
   - component: {fileID: 452339712}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: L-Eye Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1057,7 +1057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4339d3bd58294a499e7cce2205324cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 0.1
+  rayDistance: 5
   rayWidth: 0.01
   layersToInclude:
     serializedVersion: 2
@@ -4901,7 +4901,7 @@ GameObject:
   - component: {fileID: 1568459079}
   - component: {fileID: 1568459078}
   - component: {fileID: 1568459077}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: R-Eye Interactor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4935,7 +4935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4339d3bd58294a499e7cce2205324cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayDistance: 0.1
+  rayDistance: 5
   rayWidth: 0.01
   layersToInclude:
     serializedVersion: 2
@@ -5620,8 +5620,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 815160022}
     - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: dynamicResolutionVersion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: quest2MaxDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: quest2MinDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: quest3MaxDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: quest3MinDynamicResolutionScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
       propertyPath: requestEyeTrackingPermissionOnStartup
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: requestBodyTrackingPermissionOnStartup
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332710969991, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: requestFaceTrackingPermissionOnStartup
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7079690332722676895, guid: c89b2c4e711f8a14ba3df7e4b3c71f12, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 3199
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

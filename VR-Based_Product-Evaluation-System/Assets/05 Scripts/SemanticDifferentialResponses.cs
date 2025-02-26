@@ -18,6 +18,7 @@ public class SemanticDifferentialResponses : MonoBehaviour
     [Header("Export data to HMD?")]
     public bool toHMD = false;
 
+    [Header("Other")]
     public int counter;
     private GameObject manager;
     private string filename;

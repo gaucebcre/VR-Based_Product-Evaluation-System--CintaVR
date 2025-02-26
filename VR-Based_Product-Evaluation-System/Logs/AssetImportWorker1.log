@@ -218,3 +218,849 @@ Start importing Assets/Editor using Guid(612909726c2884a4793a90e04e724af6) Impor
  -> (artifact id: '7292665f4d962c3e544d53306467f41b') in 0.021196 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.247 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR-Based_Product-Evaluation-System
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  2.846 seconds
+Domain Reload Profiling: 4064ms
+	BeginReloadAssembly (316ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (77ms)
+	RebuildCommonClasses (49ms)
+	RebuildNativeTypeToScriptingClass (19ms)
+	initialDomainReloadingComplete (63ms)
+	LoadAllAssembliesAndSetupDomain (770ms)
+		LoadAssemblies (854ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (83ms)
+			TypeCache.Refresh (19ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (2847ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1270ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (6ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (237ms)
+			ProcessInitializeOnLoadAttributes (842ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (17ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 64.92 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.19 ms.
+Unloading 7017 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 118 unused Assets / (478.1 KB). Loaded Objects now: 7566.
+Memory consumption went from 228.7 MB to 228.2 MB.
+Total: 10.975400 ms (FindLiveObjects: 0.710200 ms CreateObjectMapping: 0.757300 ms MarkObjects: 9.108100 ms  DeleteObjects: 0.398700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 69.86 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.24 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (429.4 KB). Loaded Objects now: 7566.
+Memory consumption went from 118.1 MB to 117.7 MB.
+Total: 11.146900 ms (FindLiveObjects: 0.835600 ms CreateObjectMapping: 1.256800 ms MarkObjects: 8.714100 ms  DeleteObjects: 0.338900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 63.30 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.28 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (429.4 KB). Loaded Objects now: 7566.
+Memory consumption went from 117.3 MB to 116.9 MB.
+Total: 9.526300 ms (FindLiveObjects: 0.710000 ms CreateObjectMapping: 0.768100 ms MarkObjects: 7.740500 ms  DeleteObjects: 0.306400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.765 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR-Based_Product-Evaluation-System
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 40.901 seconds
+Domain Reload Profiling: 43627ms
+	BeginReloadAssembly (419ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (96ms)
+	RebuildCommonClasses (58ms)
+	RebuildNativeTypeToScriptingClass (25ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (2150ms)
+		LoadAssemblies (1846ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (537ms)
+			TypeCache.Refresh (437ms)
+				TypeCache.ScanAssembly (395ms)
+			ScanForSourceGeneratedMonoScriptInfo (66ms)
+			ResolveRequiredComponents (32ms)
+	FinalizeReload (40902ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1625ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (32ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (246ms)
+			ProcessInitializeOnLoadAttributes (774ms)
+			ProcessInitializeOnLoadMethodAttributes (539ms)
+			AfterProcessingInitializeOnLoad (29ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 79.81 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.21 ms.
+Unloading 7018 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 118 unused Assets / (505.3 KB). Loaded Objects now: 7571.
+Memory consumption went from 227.7 MB to 227.2 MB.
+Total: 21.725400 ms (FindLiveObjects: 1.329800 ms CreateObjectMapping: 2.033400 ms MarkObjects: 17.523200 ms  DeleteObjects: 0.837000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 91.91 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.21 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (437.6 KB). Loaded Objects now: 7571.
+Memory consumption went from 118.1 MB to 117.7 MB.
+Total: 13.419100 ms (FindLiveObjects: 0.896600 ms CreateObjectMapping: 1.130800 ms MarkObjects: 10.926100 ms  DeleteObjects: 0.463900 ms)
+
+Prepare: number of updated asset objects reloaded= 47
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  2.986 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR-Based_Product-Evaluation-System
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 22.024 seconds
+Domain Reload Profiling: 24986ms
+	BeginReloadAssembly (302ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (71ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (64ms)
+	LoadAllAssembliesAndSetupDomain (2538ms)
+		LoadAssemblies (2614ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (84ms)
+			TypeCache.Refresh (23ms)
+				TypeCache.ScanAssembly (2ms)
+			ScanForSourceGeneratedMonoScriptInfo (30ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (22025ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1296ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (33ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (260ms)
+			ProcessInitializeOnLoadAttributes (771ms)
+			ProcessInitializeOnLoadMethodAttributes (197ms)
+			AfterProcessingInitializeOnLoad (26ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 218.75 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.32 ms.
+Unloading 7019 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 118 unused Assets / (497.6 KB). Loaded Objects now: 7577.
+Memory consumption went from 227.8 MB to 227.3 MB.
+Total: 19.001800 ms (FindLiveObjects: 1.466000 ms CreateObjectMapping: 1.654600 ms MarkObjects: 15.307500 ms  DeleteObjects: 0.572100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: ca8bfbe31e1c4ecbdf4ebbd03c591b75 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Import Request.
+  Time since last request: 1744.372494 seconds.
+  path: Assets/05 Scripts/ProductPosition.cs
+  artifactKey: Guid(7e4665357a97674428b0dfafe07a57bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/05 Scripts/ProductPosition.cs using Guid(7e4665357a97674428b0dfafe07a57bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'ed5abcb2b14f723dcc5ae16b5cb08ba7') in 0.003436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.948 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-VR-Based_Product-Evaluation-System
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in 18.906 seconds
+Domain Reload Profiling: 20829ms
+	BeginReloadAssembly (330ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (78ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (22ms)
+	initialDomainReloadingComplete (57ms)
+	LoadAllAssembliesAndSetupDomain (1466ms)
+		LoadAssemblies (1549ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (90ms)
+			TypeCache.Refresh (21ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (33ms)
+			ResolveRequiredComponents (34ms)
+	FinalizeReload (18906ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1791ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (44ms)
+			SetLoadedEditorAssemblies (14ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (290ms)
+			ProcessInitializeOnLoadAttributes (1090ms)
+			ProcessInitializeOnLoadMethodAttributes (329ms)
+			AfterProcessingInitializeOnLoad (24ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 73.38 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.39 ms.
+Unloading 7017 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 119 unused Assets / (506.0 KB). Loaded Objects now: 7581.
+Memory consumption went from 227.6 MB to 227.1 MB.
+Total: 22.607200 ms (FindLiveObjects: 2.174700 ms CreateObjectMapping: 2.297200 ms MarkObjects: 16.593800 ms  DeleteObjects: 1.539300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 63.10 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.21 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (429.6 KB). Loaded Objects now: 7581.
+Memory consumption went from 118.2 MB to 117.8 MB.
+Total: 10.940000 ms (FindLiveObjects: 0.983500 ms CreateObjectMapping: 0.978700 ms MarkObjects: 8.683700 ms  DeleteObjects: 0.293100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 107.46 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.27 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (429.7 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.4 MB to 117.0 MB.
+Total: 9.161800 ms (FindLiveObjects: 0.732700 ms CreateObjectMapping: 0.808400 ms MarkObjects: 7.289600 ms  DeleteObjects: 0.330000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 63.50 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.22 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (421.7 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.4 MB to 117.0 MB.
+Total: 9.876600 ms (FindLiveObjects: 0.727500 ms CreateObjectMapping: 0.850600 ms MarkObjects: 7.997900 ms  DeleteObjects: 0.299400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 65.25 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.23 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (429.9 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.4 MB to 117.0 MB.
+Total: 19.131900 ms (FindLiveObjects: 0.820300 ms CreateObjectMapping: 0.903200 ms MarkObjects: 16.809800 ms  DeleteObjects: 0.596300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 63.91 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.20 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (437.9 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.4 MB to 117.0 MB.
+Total: 9.290700 ms (FindLiveObjects: 0.659000 ms CreateObjectMapping: 0.661400 ms MarkObjects: 7.583000 ms  DeleteObjects: 0.386200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 62.64 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.21 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (437.7 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.4 MB to 117.0 MB.
+Total: 9.628600 ms (FindLiveObjects: 0.689600 ms CreateObjectMapping: 0.785900 ms MarkObjects: 7.836900 ms  DeleteObjects: 0.314900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 66.78 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.26 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (429.7 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.5 MB to 117.0 MB.
+Total: 9.202800 ms (FindLiveObjects: 0.705800 ms CreateObjectMapping: 0.788800 ms MarkObjects: 7.385800 ms  DeleteObjects: 0.321300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Shader 'Meta/MRUK/Scene/HighlightsAndShadows': fallback shader 'Off' not found
+Refreshing native plugins compatible for Editor in 73.48 ms, found 18 plugins.
+Preloading 2 native plugins for Editor in 0.20 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6 unused Assets / (437.9 KB). Loaded Objects now: 7581.
+Memory consumption went from 117.5 MB to 117.0 MB.
+Total: 11.819000 ms (FindLiveObjects: 1.023600 ms CreateObjectMapping: 1.022300 ms MarkObjects: 9.466100 ms  DeleteObjects: 0.305700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRecorder.cs: 13aee4e2fa49d6b03b703f9ed1be63a3 -> 5427fabcc7eddd0403d8c29ded1cba0f
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/SemanticDifferentialResponses.cs: 3cc6a71d2231a99333b9cb64847af1ff -> 03667fadfd96d786cf12d8a83584e959
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/precompiled-assembly-types:VoiceSDK.Runtime: f7879e8c6353c35f8b9cc8be0817ec88 -> 4a25940c5bb8c8932637a34b9aa84071
+  custom:scripting/precompiled-assembly-types:Oculus.VR: 7c8b897337947a27720ebc9478aae940 -> 38712e146b83356de09495dfb1cff21c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/OVRBundleManager.cs: ae11c06ec3a9a17fadba593bf5b2110f -> 
+  custom:scripting/monoscript/fileName/Manager.cs: ee8294bec6ab5974ecd4deedeb93242b -> 48a241983f6e43df6f46f37546fc7d88
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: 4cf370eb4baeb8cd040fcf1a3c46c9af -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 274c888a06724cccf0706ed2b692c042 -> a4ce575dece72f0b579d46554154e9d7
+  custom:scripting/monoscript/fileName/CSVObjectSpawner.cs: b586a07b44170c0eebb34d2e55f4fe10 -> c54449ba26ea8319f372aa242a9b4f53
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/EyeTrackingRay.cs: e2e0b1951680b3a55b3898f9963e5392 -> db8c1006293bc15ed3c4367760ab24ca
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.VR.Editor: af5594e97f0a54505cef1d77e4bfaa25 -> a1c8541e19ffd263b6e7fd9fe2bb5a0c
+  custom:scripting/monoscript/fileName/OVRBundleTool.cs: e832ed4472e61e985239fa105b0a4a17 -> 
+  custom:scripting/monoscript/fileName/PositionRecorder.cs: 007fe89594ffce1cbdd0c2f3b2293f3f -> 6dedf504b0cd8933e3ab9145c14de655
+  custom:scripting/monoscript/fileName/SceneViewSnapshot.cs: 6c10dae3ba22d274330d1b01422ad008 -> 6a9e4122e21f90930ddb1861827cc276
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Oculus.Haptics: b96106907dcfbad871193d137767d9ce -> 44b53273b3d2715a84ca3298f1ec0293
+  custom:scripting/precompiled-assembly-types:UnityEngine.UI: 7ac2e4ab0e1385bc66dd6dd258282fe3 -> f762135bac905e34e2b540c872c48817
+  custom:scripting/monoscript/fileName/ProductPosition.cs: 1a06c884c3ce091f5fedaecb2f544de8 -> 
+  custom:scripting/monoscript/fileName/EyeInteractable.cs: b6ecc73a11437e3eaee66f942dbb45ed -> be67d0da1afa9969fd11266a4bdd61aa
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  3.645 seconds
