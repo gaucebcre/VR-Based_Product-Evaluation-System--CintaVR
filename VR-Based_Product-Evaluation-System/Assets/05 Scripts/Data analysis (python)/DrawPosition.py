@@ -2,9 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import os
+import sys
 
-# UPDATE csv_folder (PATH)
-csv_folder = "UPDATE"
+csv_folder = sys.argv[1]
 csv_files = [file for file in os.listdir(csv_folder) if file.endswith("_Position.csv")]
 
 for csv_filename in csv_files:

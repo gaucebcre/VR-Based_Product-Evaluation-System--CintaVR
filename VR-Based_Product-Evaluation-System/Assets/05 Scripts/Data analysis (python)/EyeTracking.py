@@ -1,8 +1,8 @@
 import os
 import pandas as pd
+import sys
 
-# UPDATE csv_folder (PATH)
-csv_folder = "UPDATE"
+csv_folder = sys.argv[1]
 csv_files = [file for file in os.listdir(csv_folder) if file.endswith("Eye-tracking.csv")]
 
 # UPDATE hz (it must be the same as the value entered in Unity)
