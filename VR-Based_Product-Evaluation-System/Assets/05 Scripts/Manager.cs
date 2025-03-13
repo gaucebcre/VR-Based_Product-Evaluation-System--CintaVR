@@ -21,22 +21,23 @@ public class Manager : MonoBehaviour
 
     [Header("Other")]
     public TextMeshProUGUI letterDropdown;
+
     public TextMeshProUGUI numberDropdown;
     public GameObject semanticDifferential;
 
     private bool evaluationStarted = false;
 
-    void Start()
+    private void Start()
     {
         //Don't destroy
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(player);
 
         //Save first code
-        userCode = letterDropdown.text + numberDropdown.text;        
+        userCode = letterDropdown.text + numberDropdown.text;
     }
 
-    void Update()
+    private void Update()
     {
         StartEvaluation();
     }
@@ -51,7 +52,7 @@ public class Manager : MonoBehaviour
 
     public void SaveUserCode()
     {
-       userCode = letterDropdown.text + numberDropdown.text;
+        userCode = letterDropdown.text + numberDropdown.text;
     }
 
     public void StartEvaluation()
@@ -69,7 +70,6 @@ public class Manager : MonoBehaviour
 
             evaluationStarted = true;
         }
-        
         else if (evaluationStarted && OVRInput.GetDown(OVRInput.Button.One))
         {
             semanticDifferential.SetActive(true);

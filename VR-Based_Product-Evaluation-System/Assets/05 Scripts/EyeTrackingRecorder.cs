@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class EyeTrackingRecorder : MonoBehaviour
 {
-    
-
     [Header("Blink")]
     public OVRFaceExpressions faceExpression;
+
     public OVRFaceExpressions.FaceExpression leftEyeBlink;
     public OVRFaceExpressions.FaceExpression rightEyeBlink;
     private float weightL;
@@ -20,8 +19,9 @@ public class EyeTrackingRecorder : MonoBehaviour
     [Header("Frequence (hz)")]
     [Tooltip("In hertz)")]
     public int frequence = 120;
+
     private float realFrequency;
-   
+
     [Header("Export data to HMD?")]
     public bool toHMD = false;
 
@@ -31,13 +31,12 @@ public class EyeTrackingRecorder : MonoBehaviour
     private List<string> voi = new();
     private string filename;
 
-    void Start()
+    private void Start()
     {
         if (!toHMD)
         {
             filename = Application.streamingAssetsPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Eye-tracking" + ".csv";
         }
-
         else
         {
             filename = Application.persistentDataPath + "\\" + gameObject.GetComponent<Manager>().userCode + "_Eye-tracking" + ".csv";
@@ -45,7 +44,8 @@ public class EyeTrackingRecorder : MonoBehaviour
 
         UpdateInvoke();
     }
-    void UpdateInvoke()
+
+    private void UpdateInvoke()
     {
         if (frequence <= 0)
         {
@@ -57,7 +57,8 @@ public class EyeTrackingRecorder : MonoBehaviour
         CancelInvoke("ReadVolume");
         InvokeRepeating("ReadVolume", 0, realFrequency);
     }
-    void Update()
+
+    private void Update()
     {
         volumesOfInterest = GameObject.FindGameObjectsWithTag("VoI");
 
@@ -103,12 +104,11 @@ public class EyeTrackingRecorder : MonoBehaviour
                     volumesOfInterest[a].GetComponent<EyeInteractable>().isHovered = false;
                 }
             }
-
             else if (stimuliAddedToList == false && isBlinking == false)
             {
                 voi.Add("Environment");
             }
-        }    
+        }
     }
 
     public void ExportData()
@@ -123,6 +123,5 @@ public class EyeTrackingRecorder : MonoBehaviour
         }
 
         tw.Close();
-        
     }
 }
